@@ -24,7 +24,7 @@ data CPUType = RISC | CISC | VLIW
 
 -- | Many ISAs use little computations inside the instruction,
 -- for instance for memory addressing.
-data SubExp = forall a. Register a => Reg a
+data SubExp = forall a. Register a => Reg a 
             | Num Int
             | Dereference SubExp
             | Add SubExp SubExp
